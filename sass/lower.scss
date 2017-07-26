@@ -1,0 +1,49 @@
+@charset "utf-8";
+@import "setting/site";
+/*                下層共通
+======================================================= */
+/*                bread
+======================================================= */
+#bread{
+    float: left;
+    @include media768 {
+        display: none;
+    }
+    ol{
+        overflow: hidden;
+        li{
+            display: inline-block;
+            float: left;
+            @include fa;
+            font-size: $fontS11;
+            &:before{
+                content: "\f105";
+                margin: 0 1em;
+            }
+            &:first-child{
+                &:before{
+                    content: "";
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+.content{
+}
+//タイトル装飾
+.main_title{
+}
+.content_title{
+    h2{
+    }
+}
+/*                レイアウト
+======================================================= */
+
+/*                記事系
+======================================================= */
+//読み込む場合は設定が必要　@include entry;
+/*                お問い合わせ
+======================================================= */
+//読み込む場合は設定が必要　@//@include contact;

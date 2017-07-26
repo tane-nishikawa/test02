@@ -1,0 +1,146 @@
+@charset "utf-8";
+@import "setting/site";
+/*                reset
+======================================================= */
+@include reset;
+/*                leyout
+======================================================= */
+#wrapper{
+  overflow: hidden;
+}
+#main_area{
+}
+.main_width{
+  @include boxC;
+  max-width: 1200px;
+  @include media1100 {
+    padding: 0 70px;
+  }
+  @include media1024 {
+    padding: 0 70px;
+  }
+  @include media768 {
+    padding: 0 20px;
+  }
+  @include media640 {
+    padding: 0 15px;
+  }
+}
+.cont_width{
+  @include boxC;
+  max-width: 940px;
+  .contIn{
+    @include boxC;
+    max-width: 780px;
+  }
+}
+.main_cont{
+}
+.sidebar{
+}
+/*                タイトル装飾
+======================================================= */
+.main_title{}
+.content_title{
+  @include media640 {
+  }
+}
+
+/*                テキスト装飾
+======================================================= */
+.text_right{ text-align:right;}
+.text_left{ text-align:left;}
+.text_center{ text-align:center;}
+.underline{ text-decoration: underline;}
+.lato{
+  font-family: $fontLato;
+}
+.mintyo{
+  font-family: $fontMintyo;
+}
+
+/*                table
+======================================================= */
+table{
+  width: 100%;
+  border-collapse: separate;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table tr{}
+table tr td,
+table tr th{
+  text-align: left;
+  padding: 0px;
+}
+.ie7 table tr th,
+.ie7 table tr td{    position:relative;}
+
+/* 擬似テーブル */
+.table{
+  display: table;
+  width: 100%;
+  .tableCell{
+    display: table-cell;
+    vertical-align: top;
+  }
+  &.sp_brake{
+    @include media640{
+      display: block;
+      .tablecell{
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+/*                pageTop
+======================================================= */
+.page_top {
+  position: fixed;
+  right:40px;
+  bottom:40px;
+  z-index:1000;
+  display:none;
+  a {
+    display: block;
+  }
+  @include media640 {
+    bottom:0px;
+    right: 0;
+    img{
+      width: 36px;
+      height: 36px;
+    }
+  }
+}
+/*                カラム
+======================================================= */
+@include gurid;
+/*                iframeのレスポン化
+======================================================= */
+.frame_respon{
+  .fb_iframe_widget,
+  .fb_iframe_widget span,
+  .fb_iframe_widget iframe[style]{ width: 100%important; }
+}
+.gmap {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  iframe,
+  object,
+  embed {
+    border: none !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+/*                ヘッダー・サイド・フッター
+======================================================= */
+@include frame;

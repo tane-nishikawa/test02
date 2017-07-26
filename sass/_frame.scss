@@ -1,0 +1,51 @@
+@mixin frame{
+    /*                header
+    ======================================================= */
+  #header {
+    .sp_menu {
+      display: inline-block;
+      cursor: pointer;
+      @include fa;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      margin-top: -0.8em;
+      @include media769{
+        display: none;
+      }
+      @include media640{
+        right: 15px;
+      }
+      p {
+        overflow: hidden;
+        width: 1px;
+        height: 1px;
+      }
+      &:before {
+        content: "\f0ca";
+        font-size: 200%;
+      }
+    }//spMenu
+    .gnavi{}
+  } //header
+
+    /*                sidebar
+    ======================================================= */
+    .sidebar{
+    }//sidebar
+
+    /*                footer
+    ======================================================= */
+    #footer {
+        .ft_navi{
+            ul{
+               li{
+                }
+            }
+        }
+        .copy{
+            p{
+            }
+        }
+    }//footer
+}
