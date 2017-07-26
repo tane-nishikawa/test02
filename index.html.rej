@@ -1,0 +1,64 @@
+diff a/index.html b/index.html	(rejected hunks)
+@@ -0,0 +1,62 @@
++<!doctype html>
++<html>
++  <head>
++    <meta charset="utf-8">
++    <title></title>
++    <meta name="keywords" content="">
++    <meta name="description" content="">
++    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=0">
++    <meta property="og:type" content="">
++    <meta property="og:url" content="">
++    <meta property="og:image" content="">
++    <meta property="og:description" content="">
++    <meta property="og:site_name" content=""/>
++    <meta property="og:title" content=""/>
++    <link rel="stylesheet" href="/css/common.css">
++    <link rel="stylesheet" href="/css/home.css">
++    <!--[if lt IE 9]>
++<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
++<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
++<![endif]-->
++    <!-- GoogleAnalytics -->
++    <script src="/js/ga.js"></script>
++    <!-- GoogleAnalytics -->
++  </head>
++  <body id="" class="">
++    <div id="wrapper">
++      <header>
++       <div id="header" role="banner">
++       <h1>aaa</h1>
++       <p>テスト</p>
++        </div><!-- header -->
++      </header>
++      <div id="gnavi" role="navigation">
++        <ul>
++          <li><a href="#" title=""></a></li>
++          <li><a href="#" title=""></a></li>
++          <li><a href="#" title=""></a></li>
++          <li><a href="#" title=""></a></li>
++          <li><a href="#" title=""></a></li>
++        </ul>
++      </div><!-- gnavi -->
++      <div id="bread">
++        <ol itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
++          <li class="breadcrumb_top" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/" itemprop="url"><span itemprop="title">HOME</span></a></li>
++          <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
++            <a href="#" itemprop="url"><span itemprop="title">第2階層</span></a>
++          </li>
++          <li class="last" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="" itemprop="url"><span itemprop="title">現在のページ</span></a></li>
++        </ol>
++      </div><!-- bread -->
++      <div id="mainArea" role="main">
++      </div><!-- mainArea -->
++      <footer>
++       <div id="footer" role="contentinfo">
++        </div><!-- footer -->
++      </footer>
++    </div><!-- wrapper -->
++    <script src="/js/jquery.js"></script>
++    <script src="/js/easing.js"></script>
++    <script src="/js/common.js"></script>
++  </body>
++</html>
